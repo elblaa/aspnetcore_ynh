@@ -51,6 +51,23 @@ ram.runtime = "50M"
     extras.microsoft.key = ""
     extras.microsoft.packages = ["aspnetcore-runtime-9.0"]
 
+    [resources.sources]
+
+        [resources.sources.main]
+        amd64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm.tar.gz"
+        #todo setup sha256 from release
+        amd64.sha256 = "8d40bbb6a39d4db629bf3aca00aaa8326be64f72a64bcc5acc143a9bd341f420"
+        armhf.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm.tar.gz"
+        armhf.sha256 = "d30b26de63c1aa5ffbec6cee4348f28e0a57015e40b95f8c04c6f8138c0794d5"
+        arm64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm64.tar.gz"
+        arm64.sha256 = "14179883b60d8b35fd4c494d5cd73a03750aa2110610e743174d026491799c64"
+        in_subdir = false
+
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = ".*-linux-x64.tar.gz"
+        autoupdate.asset.armhf = ".*-linux-arm.tar.gz"
+        autoupdate.asset.arm64 = ".*-linux-arm64.tar.gz"
+
     [resources.permissions]
     main.url = "/"
 

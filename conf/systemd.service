@@ -1,15 +1,21 @@
 [Unit]
-Description=Small description of the service
+Description=Example .NET Web API App running on Yunohost
 After=network.target
 
 [Service]
-Type=simple
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=/usr/bin/dotnet __INSTALL_DIR__/Elbla.Sample.AspNetCore.Ynh.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-ynh
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_NOLOGO=true
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
