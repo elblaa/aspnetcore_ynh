@@ -48,19 +48,18 @@ ram.runtime = "50M"
     
     [resources.apt]
     extras.microsoft.repo = "deb https://packages.microsoft.com/debian/12/prod/ bookworm main"
-    extras.microsoft.key = ""
+    # extras.microsoft.key = ""
     extras.microsoft.packages = ["aspnetcore-runtime-9.0"]
 
     [resources.sources]
 
         [resources.sources.main]
-        amd64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm.tar.gz"
-        #todo setup sha256 from release
-        amd64.sha256 = "8d40bbb6a39d4db629bf3aca00aaa8326be64f72a64bcc5acc143a9bd341f420"
-        armhf.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm.tar.gz"
-        armhf.sha256 = "d30b26de63c1aa5ffbec6cee4348f28e0a57015e40b95f8c04c6f8138c0794d5"
-        arm64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v1.0.0/dotnet-yunohost-sample-1.0.0-linux-arm64.tar.gz"
-        arm64.sha256 = "14179883b60d8b35fd4c494d5cd73a03750aa2110610e743174d026491799c64"
+        amd64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-x64.tar.gz"
+        amd64.sha256 = "365b03ad3db97f65e2af056ee8c7e91a40914270def8cd990974c9200a95ab96"
+        armhf.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-arm.tar.gz"
+        armhf.sha256 = "c222c19da71583ba81e2a86e837f3ee37c9c3304e0870bd42fbfe8bacaffa680"
+        arm64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-arm64.tar.gz"
+        arm64.sha256 = "1c3921a4f6428fe45c26c02d454560f1ae468ff65edefffc11c20a96772c22f2"
         in_subdir = false
 
         autoupdate.strategy = "latest_github_release"
