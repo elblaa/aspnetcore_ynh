@@ -46,7 +46,7 @@ ram.runtime = "50M"
 [resources]    
     [resources.apt]
     extras.microsoft.repo = "deb https://packages.microsoft.com/debian/12/prod/ bookworm main"
-    # extras.microsoft.key = ""
+    extras.microsoft.key = "https://packages.microsoft.com/keys/microsoft.asc"
     extras.microsoft.packages = ["aspnetcore-runtime-9.0"]
 
     [resources.sources]
