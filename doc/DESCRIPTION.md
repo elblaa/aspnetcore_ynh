@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+This application install a default .Net Web api application. This is useful to install your dotnet web app.

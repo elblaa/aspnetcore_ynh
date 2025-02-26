@@ -32,11 +32,11 @@ source /usr/share/yunohost/helpers
 
 # If you need to, you can define custom settings
 # (or remove this section entirely if not relevant for you)
-foo="bar"
-ynh_app_setting_set --key=foo --value=$foo
+# foo="bar"
+# ynh_app_setting_set --key=foo --value=$foo
 
-ynh_app_setting_set --key=php_upload_max_filesize --value=50M
-ynh_app_setting_set --key=php_post_max_size --value=50M
+# ynh_app_setting_set --key=php_upload_max_filesize --value=50M
+# ynh_app_setting_set --key=php_post_max_size --value=50M
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE

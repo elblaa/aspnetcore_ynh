@@ -43,9 +43,7 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
-[resources]
-    [resources.system_user]
-    
+[resources]    
     [resources.apt]
     extras.microsoft.repo = "deb https://packages.microsoft.com/debian/12/prod/ bookworm main"
     # extras.microsoft.key = ""
