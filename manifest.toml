@@ -65,6 +65,8 @@ ram.runtime = "50M"
         autoupdate.asset.armhf = ".*-linux-arm.tar.gz"
         autoupdate.asset.arm64 = ".*-linux-arm64.tar.gz"
 
+    [resources.system_user]
+
     [resources.permissions]
     main.url = "/"
 
