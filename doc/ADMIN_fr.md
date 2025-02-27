@@ -1,4 +1,4 @@
-Le dossier d'installationd de l'application est  `__INSTALL_DIR__`
+Le dossier d'installation de l'application est  `__INSTALL_DIR__`
 
 Pour installer votre propre application .net :
 1. Publiez votre application dotnet `dotnet publish --configuration Release`
