@@ -53,11 +53,11 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         amd64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-x64.tar.gz"
-        amd64.sha256 = "365b03ad3db97f65e2af056ee8c7e91a40914270def8cd990974c9200a95ab96"
+        amd64.sha256 = "849f22bdc2b173c1002a1657b5b60c8c818b0d30d8c7d9540990281b532f11dc"
         armhf.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-arm.tar.gz"
-        armhf.sha256 = "c222c19da71583ba81e2a86e837f3ee37c9c3304e0870bd42fbfe8bacaffa680"
+        armhf.sha256 = "08ef8d5973a4658e7ce1d274a63edecb9f521cbb5d6109b383f3381789dbc085"
         arm64.url = "https://github.com/elblaa/sample_aspnetcore_ynh/releases/download/v9.0.2/dotnet-yunohost-sample-9.0.2-linux-arm64.tar.gz"
-        arm64.sha256 = "1c3921a4f6428fe45c26c02d454560f1ae468ff65edefffc11c20a96772c22f2"
+        arm64.sha256 = "99c77994843c3dddfa9cf4452cd14d8fc614653943b26ccec556c243459bd8e6"
         in_subdir = false
 
         autoupdate.strategy = "latest_github_release"
